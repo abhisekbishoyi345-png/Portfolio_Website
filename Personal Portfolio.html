@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- <link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        :root {
+  --bg: #f5f7fb;
+  --surface: #ffffff;
+  --text: #17223b;
+  --muted: #5a647a;
+  --accent: #4f6cff;
+  --accent-soft: #dbe2ff;
+  --border: #e1e5eb;
+}
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, sans-serif;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+
+/* Navbar */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0px 3%;
+    background:black;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+   
+}
+
+.logo{
+    background:linear-gradient(90deg,#1ea5ff,#9b3dff);
+    -webkit-background-clip:text;
+    -webkit-text-fill-color:transparent;
+    font-size:50px;
+    font-weight:bold;
+
+}
+
+.logo span{
+    color:#8a2be2;
+}
+
+nav {
+    list-style:none;
+    display:flex;
+}
+
+
+nav  a{
+     color:white;
+    text-decoration:none;
+   margin: 0 8px;
+   padding:8px 15px;
+    font-size:20px;
+    border-radius: 17px;
+    transition: 0.3s;
+
+}
+
+nav  a:hover{
+    background:#8a2be2;
+}
+.nav-links{
+    display:flex;
+    gap:25px;
+    
+   
+}
+
+
+.talk-btn{
+    background:#8a2be2;
+    color:white;
+    text-decoration:none;
+    margin:auto;
+    padding:10px 20px;
+    border-radius:5px;
+    transition:.3s;
+   
+}
+
+.talk-btn:hover{
+    background:#6f1fc0;
+}
+
+/* Hero */
+#home{
+    background-color: rgb(206, 222, 209);
+}
+
+    .hero{
+        display:flex;
+    justify-content:space-between; 
+    align-items:center;
+    gap:60px;
+    padding:80px 20px;
+    
+    margin: auto; 
+}
+
+.hero-text{
+    width:50%;
+    flex:1;
+font-size:17px;
+margin-top:-50px;
+
+}
+.icon{
+
+     color:white;
+    font-size:30px;
+    margin:0 15px;
+    text-decoration:none;
+   transition:0.3s;
+
+}
+
+
+.hero-text h3{
+    color:#555;
+    margin-bottom:10px;
+    font-size:x-large;
+;
+}
+
+.hero-text h1{
+
+    color:#ffffff;
+    font-size:3.5rem;
+    line-height: 1.1;
+}
+
+.hero-text h1 span{ 
+    color:#8a2be2;
+    font-size: 120px;
+}
+
+.hero-text h2{
+    color:#444;
+    margin:15px 0;
+}
+
+.hero-text p{
+    color:#666;
+    line-height:1.8;
+    margin-bottom:25px;
+}
+
+.btn{
+    background:#8a2be2;
+    color:white;
+    padding:12px 25px;
+    text-decoration:none;
+    border-radius:5px;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#6f1fc0;
+}
+.hero-image{
+    flex:1;
+    display:flex;
+    justify-content:center;
+}
+
+.hero-image img{
+    width:95%;
+    border-radius:2000px;
+height:50%;
+margin-top:-110px;
+}
+
+/* Sections */
+
+section{
+    padding:80px 20px;
+}
+section > *{
+    max-width:1100px;
+    margin:auto;
+}
+
+.heading{
+   text-align: center;
+    font-size:50px;
+    color:#8a2be2;
+    margin-bottom:40px;
+}
+.head{
+    text-align: right;
+    font-size:40px;
+    color:#8a2be2;
+    max-width: 1000px;
+
+
+}
+
+/* About */
+#about {
+     background:rgb(7, 16, 22);
+    padding: 60px 5%;
+    margin-top: -75px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+}
+
+.about-box {
+    width: 50%;
+    max-width: 450px;
+  transform: translateX(400px);
+     background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    text-align: left;
+    margin-bottom: 25px;
+    font-size: 17px; ;
+
+}
+.about-img {
+    width: 60%;
+    border-radius:0px;
+    margin-top: -600px;
+    margin-right: 50px;
+    flex:2;
+    height: 500px;
+    
+     
+      
+}
+/* Skills */
+
+#skills{
+    background:rgb(176, 161, 161);
+    margin-top: -65px;
+}
+
+.skill-tags{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:40px;
+}
+
+.skill-tags span{
+    background:white;
+    color:#8a2be2;
+    border:2px solid #8a2be2;
+    padding:12px 25px;
+    border-radius:50px;
+    font-weight:600;
+    transition:0.3s;
+}
+
+
+
+
+.skill{
+    background:#8a2be2;
+    color:white;
+    padding:10px 20px;
+    border-radius:30px;
+    margin-right:15px;
+    
+}
+
+.skills-container{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:20px;
+}
+
+.card{
+    width:250px;
+    padding:25px;
+    text-align:center;
+    background:rgb(255, 255, 255);
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card i{
+    font-size:60px;
+    color:#8a2be2;
+    margin-bottom:15px;
+}
+
+.card h3{
+    font-size:20px;
+}
+
+.card:hover{
+    background:#8a2be2;
+    color:white;
+    transform:translateY(-10px);
+}
+
+.card:hover i{
+    color:white;
+}
+/* Projects */
+#projects{
+    background:rgb(198, 164, 43);
+}
+
+.project-container{
+    display:grid;
+    justify-content:center;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    flex-wrap:wrap;
+    gap:25px;
+    margin: auto;
+    max-width: 1100px;
+}
+.project-container a{
+    text-decoration:none;
+}
+
+.project-card{
+    width:100%;
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.4s;
+    text-align:center;
+}
+
+.project-card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    display:block;
+}
+
+.project-card h3{
+    color:#8a2be2;
+    margin:15px 0 10px;
+}
+
+.project-card p{
+    padding:0 20px 20px;
+    color:#555;
+}
+
+.project-card:hover{
+    transform:scale(1.05);
+}
+
+/* Contact */
+#contact{
+    background:rgb(23, 22, 22);
+    color:#e6edf3;
+
+}
+
+form{
+    max-width:100%;
+    max-width: 700px;
+    margin:auto;
+}
+form input,
+
+form textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+
+}
+
+
+
+form button{
+    width:100%;
+    padding:14px;
+    background:#8a2be2;
+    color:white;
+    border:none;
+    border-radius:5px;
+    font-size:18px;
+    cursor:pointer;
+}
+
+form button:hover{
+    background:#6f1fc0;
+}
+
+/* Footer */
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:30px;
+}
+
+.social{
+    margin-bottom:15px;
+}
+
+.social a{
+    color:white;
+    font-size:30px;
+    margin:0 15px;
+    text-decoration:none;
+   transition:0.3s;
+}
+
+.social a .f:hover{
+    color:#067dbd;
+    transform:scale(1.2);
+}
+
+.social a .i:hover{
+    color:#d51dc9;
+    transform:scale(1.2);
+}
+
+.social a .l:hover{
+    color:#0664c9;
+    transform:scale(1.2);
+}
+
+.social a .g:hover{
+    color:#75eacb;
+    transform:scale(1.2);
+}
+/* Responsive */
+
+@media (max-width: 768px){
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+    }
+
+    .hero{
+        flex-direction:column;
+        text-align:center;
+        gap:40px;
+    }
+
+    .hero-text h1{
+        font-size:2.5rem;
+    }
+
+    .hero-image img{
+        max-width:280px;
+    }
+
+    .heading{
+        font-size:32px;
+    }
+
+    .card{
+        width:100%;
+        max-width:300px;
+    }
+}
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <h2 class="logo">Portfolio<span>.</span></h2>
+<div class="nav-links">
+        
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a> 
+</div>
+
+            <a href="#contact" class="btn">Let's Talk</a>
+    
+
+       
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+
+        <div class="hero-text">
+            <h3>Hello, I'm</h3>
+            <h1><span>Abhishek</span> Bishoyi</h1>
+            <h2>BCA Student & Web Developer</h2>
+
+            <p>
+                Passionate about web development and programming. I enjoy building responsive websites and learning modern technologies.
+I love creating clean, user-friendly interfaces and turning ideas into functional web applications.
+Continuously improving my skills in HTML, CSS, JavaScript, and other modern tools to stay updated with industry trends.
+            </p>
+
+            <a href="#projects" class="btn">View Projects</a>
+<a   href="#" class="icon"><i class="fa-brands fa-facebook-f f"></i></a>
+
+        <a href="#"class="icon"><i class="fa-brands fa-instagram i"></i></a>
+
+        <a  href="#"class="icon"><i class="fa-brands fa-linkedin-in l"></i></a>
+
+        </div>
+
+
+        <div class="hero-image">
+            <img src="abhishek.png" alt="Profile Photo">
+        </div>
+
+    </section>
+
+    <!-- About -->
+    <section id="about">
+
+        <h2 class="head">About Me</h2>
+
+        <div class="about-box">
+            <p>
+               I am a dedicated BCA student with a strong passion for Web Development, Java Programming, and Software Development. 
+               I enjoy designing and developing modern websites, exploring new technologies, and solving real-world problems through code. 
+               With a continuous learning mindset, I strive to improve my technical skills and gain hands-on experience through projects.
+                My goal is to build a successful career as a software developer and create innovative digital solutions that deliver meaningful user experiences.
+            </p>
+</div>
+
+<img class="about-img" src="https://media.sketchfab.com/models/c705869a59ae4b3497ef7b5332963c3c/thumbnails/d790ffc579794d528e06d905d6ccfc9c/502972474da047ed9c497efb4aa2f6a2.jpeg" alt="About Image">
+        
+
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+
+        <h2 class="heading">My Skills</h2>
+
+        <div class="skill-tags">
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>JavaScript</span>
+    <span>Java</span>
+    <span>C Programming</span>
+    <span>Web Design</span>
+    <span>Responsive Design</span>
+</div>
+
+
+       <div class="skills-container">
+
+    <div class="card">
+        <i class="fa-brands fa-html5"></i>
+        <h3>HTML</h3>
+    </div>
+
+    <div class="card">
+        <i class="fa-brands fa-css3-alt"></i>
+        <h3>CSS</h3>
+    </div>
+
+    <div class="card">
+        <i class="fa-brands fa-js"></i>
+        <h3>JavaScript</h3>
+    </div>
+
+    <div class="card">
+        <i class="fa-brands fa-java"></i>
+        <h3>Java</h3>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-c"></i>
+        <h3>C Language</h3>
+    </div>
+
+    <div class="card">
+        <i class="fa-solid fa-laptop-code"></i>
+        <h3>Web Design</h3>
+    </div>
+
+</div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+
+        <h2 class="heading">Projects & Hobbies</h2>
+
+            <div class="project-container">
+
+    <a href="file:///Users/abhisekbishoyi321/Documents/Portfolio/Supermarket.html"><div class="project-card">
+        <img src="https://img.freepik.com/free-vector/flat-design-supermarket-landing-page-template_23-2150333910.jpg" alt="supermarket">
+        <h3>SuperMarket Interface</h3>
+        <p>Responsive supermarket interface using HTML, CSS & JavaScript.</p>
+    </div></a>
+
+    <a href="file:///Users/abhisekbishoyi321/Documents/Portfolio/table.html"><div class="project-card">
+        <img src="https://images.educloud.app/educloud/blogs/auto-timetabling-how-ai-generates-school-schedules/449390-PFA22B-23.jpg" alt="Class Schedule">
+        <h3>Class Schedule</h3>
+        <p>College timetable HTML pages.</p>
+    </div></a>
+
+        <div class="project-card">
+            <img src="https://www.casita.com/images/files/public/05072023011757PM-shutterstock_2136659695.jpg" alt="My Hobbies">
+            <h3>My Hobbies</h3>
+            <p>Gym, Gaming, Coding and Listening to Music.</p>
+        </div>
+    
+
+</div>
+
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+
+        <h2 class="heading">Contact Me</h2>
+
+        <form>
+<p> <input type="text" placeholder="Your Name" required></p>
+
+           <p></p> <input type="email" placeholder="Your Email" required>
+
+           <p></p> <input type="text" placeholder="Subject">
+
+            <input type="textarea" rows="6" placeholder="Your Message"></input>
+
+            <button type="submit">Send Message</button>
+
+        </form>
+
+    </section>
+
+    <!-- Footer -->
+   <footer>
+
+    <div class="social">
+        <a   href="#"><i class="fa-brands fa-facebook-f f"></i></a>
+
+        <a href="#"><i class="fa-brands fa-instagram i"></i></a>
+
+        <a  href="#"><i class="fa-brands fa-linkedin-in l"></i></a>
+
+        <a  href="https://github.com/abhisekbishoyi345-png/Rentmojo"><i class="fa-brands fa-github g"></i></a>
+    </div>
+
+    <p>© 2026 Abhishek Bishoyi | All Rights Reserved</p>
+
+</footer>
+
+</body>

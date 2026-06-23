@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fff;
+    text-align: center;
+}
+
+
+
+
+h2 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    margin: 1px;
+}
+
+
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    border: 2px solid black;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.day {
+    background: #f2f2f2;
+}
+
+/* Colors */
+.ds {
+    background: #8faac4;
+}
+
+.lab {
+    background: #f4b400;
+}
+
+.ic {
+    background: yellow;
+}
+
+.os {
+    background: #c55a11;
+    color: black;
+}
+
+.web {
+    background: red;
+    color: black;
+}
+
+.math {
+    background: #00a6d6;
+    color: black;
+}
+
+.pd {
+    background: #8cc63f;
+}
+
+/* Teacher name */
+span {
+    
+    font-weight: normal;
+    margin-top: 5px;
+}
